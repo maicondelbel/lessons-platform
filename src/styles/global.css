@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .platform-xl {
+        width: calc(100% - 348px)
+    }
+}
+
+body {
+  @apply bg-gray-900 text-gray-100;
+  -webkit-font-smoothing: antialiased;
+}
+
+.example {
+  @apply text-2xl font-bold text-violet-500;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    transition: all .5s;
+    z-index: 50;
+    width: calc(100vw - 50px);
+}
+
+
+
+.lessons {
+    height: calc(100vh - 188px);
+    overflow: auto;
+    padding: 0 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #09090A;
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #29292E;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #323238; 
+  }

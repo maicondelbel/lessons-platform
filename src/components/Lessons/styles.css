@@ -1,0 +1,55 @@
+.card-lesson div {
+    @apply rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500 group-hover:bg-gray-900 relative
+}
+.card-lesson:hover div {
+    @apply border-green-500 bg-gray-900;
+}
+.card-lesson.available-at {
+   @apply text-gray-300 block first-letter:capitalize
+}
+.card-lesson header {
+    @apply flex items-center justify-between
+}
+.card-lesson header .available {
+    @apply text-sm text-blue-500 font-medium flex items-center gap-2
+}
+
+.card-lesson header .soon {
+    @apply text-sm text-orange-500 font-medium flex items-center gap-2
+}
+
+.card-lesson header .lesson-type {
+    @apply text-xs rounded py-[2px] px-2 text-white border border-green-500 font-bold
+}
+
+.card-lesson .lesson-title {
+    @apply text-gray-200 mt-5 block
+}
+
+
+.card-lesson.active div {
+    @apply bg-green-500 border-green-500
+}
+
+.card-lesson.active .lesson-title {
+    @apply text-white;
+}
+
+.card-lesson.active .lesson-type {
+    @apply border-white
+}
+
+.card-lesson.active header .available {
+    @apply text-white
+}
+
+.card-lesson.active div::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #00875f;
+    position: absolute;
+    top: calc(50% - 14px);
+    left: -7px;
+    transform: rotate(45deg);
+}
