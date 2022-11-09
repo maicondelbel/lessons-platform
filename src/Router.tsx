@@ -6,18 +6,9 @@ import { Subscribe } from "./pages/Subscribe";
 export function Router() {
     return (
         <Routes>
-            <Route
-                path={`${import.meta.env.VITE_BASE_URL}/`}
-                element={<Subscribe />}
-            />
-            <Route
-                path={`${import.meta.env.VITE_BASE_URL}/lesson`}
-                element={<Platform />}
-            />
-            <Route
-                path={`${import.meta.env.VITE_BASE_URL}/lesson/:slug`}
-                element={<Platform />}
-            />
+            <Route path="/" element={<Subscribe />} />
+            <Route path="/lesson" element={<Platform />} />
+            <Route path="/lesson/:slug" element={<Platform />} />
         </Routes>
     );
 }
