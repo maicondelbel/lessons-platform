@@ -32,7 +32,7 @@ export function Lessons(props: ILessonsProps) {
     return (
         <Link
             onClick={() => onClickLesson(false)}
-            to={`${import.meta.env.VITE_BASE_URL}/lesson/${slug}`}
+            to={`/lesson/${slug}`}
             className={classNames("card-lesson", {
                 active: isActiveLesson,
             })}

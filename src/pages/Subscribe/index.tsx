@@ -22,7 +22,7 @@ export function Subscribe() {
     useEffect(() => {
         const checkSubscription = localStorage.getItem("_subscribed");
         if (checkSubscription === "yes") {
-            navigate(`${import.meta.env.VITE_BASE_URL}/lesson/`);
+            navigate("/lesson/");
         }
     }, []);
 
@@ -36,11 +36,7 @@ export function Subscribe() {
                 },
             });
             localStorage.setItem("_subscribed", "yes");
-            navigate(
-                `${import.meta.env.VITE_BASE_URL}/lesson/${
-                    data?.lessons[0].slug
-                }`
-            );
+            navigate(`/lesson/${data?.lessons[0].slug}`);
         } catch (error) {
             console.log(error);
             alert("Ocorreu um erro ao realizar sua inscrição!");
