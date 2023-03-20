@@ -28,7 +28,7 @@ body {
 
 
 .lessons {
-    height: calc(100vh - 188px);
+    height: calc(100vh - 204px);
     overflow: auto;
     padding: 0 10px;
 }

@@ -26,7 +26,7 @@ export function Sidebar() {
         <aside
             className={`${
                 isExpanded ? "sidebar" : "sidebar !translate-x-full"
-            } sm:w-[348px] bg-gray-700 p-4 border-l border-gray-600 fixed xl:!translate-x-0`}
+            } sm:w-[348px] bg-gray-700 px-4 py-6 border-l border-gray-600 fixed xl:!translate-x-0`}
         >
             <div
                 className="text-green-500 cursor-pointer w-[50px] h-[50px] flex items-center justify-center top-[0] left-[-50px] bg-gray-700 absolute border-b border-f border-gray-600 xl:hidden"
